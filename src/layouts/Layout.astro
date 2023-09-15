@@ -1,4 +1,6 @@
 ---
+import '@fontsource-variable/saira';
+
 interface Props {
 	title: string;
 }
@@ -16,14 +18,14 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="min-h-screen">
 		<slot />
 	</body>
 </html>
 <style is:global>
 	html {
 		font-family: system-ui, sans-serif;
-		background: #13151a;
+		background: black;
 		background-size: 224px;
 	}
 	code {
@@ -36,5 +38,9 @@ const { title } = Astro.props;
 			Bitstream Vera Sans Mono,
 			Courier New,
 			monospace;
+	}
+
+	.text-stroke-3 {
+    -webkit-text-stroke: 3px white;
 	}
 </style>
