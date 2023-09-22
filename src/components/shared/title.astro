@@ -11,7 +11,7 @@ const { name, class: className } = Astro.props;
 
 <h1
   class:list={[
-    "uppercase font-bold flex flex-col items-center leading-none w-[280px]",
+    "uppercase font-bold flex flex-col items-center leading-none w-[fit-content]",
     className,
   ]}
 >
@@ -25,5 +25,5 @@ const { name, class: className } = Astro.props;
     </span>
     <Divider />
   </div>
-  <p class="text-[60px] text-white">{name}</p>
+  <p class="text-white text-6xl">{name}</p>
 </h1>
