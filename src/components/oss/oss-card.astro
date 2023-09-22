@@ -13,9 +13,9 @@ interface Props {
 
 const { title, description, body, link_demo, link_repository } = Astro.props;
 const imageMap: Record<string, string> = {
-  "Memora Date": "../../public/memora.png",
-  "One Hunter Theme": "../../public/oht.png",
-  Spotigen: "../../public/spotigen.png",
+  "Memora Date": "/memora.png",
+  "One Hunter Theme": "/oht.png",
+  Spotigen: "/spotigen.png",
 };
 const bgImage = imageMap[title];
 ---
