@@ -24,10 +24,12 @@ const { title } = Astro.props
       <aside
         class="h-screen w-[300px] sticky top-0 left-0 flex-grow pt-10 pl-20 flex flex-col justify-between"
       >
-        <a href="/">
-          <GlowLogo class="p-3" size={68} />
-        </a>
-        <ul class="flex flex-col gap-4 mt-10">
+        <div class="flex-grow">
+          <a href="/">
+            <GlowLogo class="p-3" size={68} />
+          </a>
+        </div>
+        <ul class="flex flex-col gap-4 flex-grow justify-center">
           <li class="text-lg text-white font-medium uppercase">
             <a href="/services">Services</a>
           </li>
@@ -44,18 +46,21 @@ const { title } = Astro.props
             <a href="/blog">Blog</a>
           </li>
         </ul>
-        <div class="text-transparent">.</div>
+        <div class="flex-grow"></div>
       </aside>
       <slot />
       <aside
         class="h-screen pt-10 w-[300px] sticky top-0 right-0 flex-grow flex flex-col items-center justify-between"
       >
-        <button
-          class="text-white text-xl font-medium bg-zinc-700 px-3 py-2 mx-10 rounded-md w-[180px] hover:bg-zinc-600 transition-colors"
-        >
-          Build with us
-        </button>
-        <ul class="flex flex-col gap-6 mt-10">
+        <div class="flex-grow">
+          <a
+            class="text-white text-xl inline-flex justify-center font-medium bg-zinc-700 px-3 py-2 mx-10 rounded-md w-[180px] hover:bg-zinc-600 transition-colors"
+            href="/contact"
+          >
+            Build with us
+          </a>
+        </div>
+        <ul class="flex flex-col flex-grow gap-6 justify-center">
           <li>
             <a href="https://twitter.com/raillyhugo" target="_blank">
               <svg
@@ -146,7 +151,7 @@ const { title } = Astro.props
             </a>
           </li>
         </ul>
-        <div class="text-transparent">.</div>
+        <div class="flex-grow"></div>
       </aside>
     </div>
   </body>
@@ -167,6 +172,10 @@ const { title } = Astro.props
       Bitstream Vera Sans Mono,
       Courier New,
       monospace;
+  }
+
+  body {
+    scrollbar-gutter: stable;
   }
 
   .text-stroke-1 {
