@@ -1,18 +1,19 @@
 ---
 type Props = {
   class?: string
+  size?: number
 }
 
-const { class: className } = Astro.props
+const { class: className, size } = Astro.props
 ---
 
 <svg
   class:list={[
-    "p-5 border-4 border-[#F8BB2D] w-max rounded-full bg-black",
+    "border-4 border-[#F8BB2D] w-max rounded-full bg-black",
     className
   ]}
-  width="93"
-  height="98"
+  width={size || 93}
+  height={size || 98}
   viewBox="0 0 68 68"
   fill="none"
 >
