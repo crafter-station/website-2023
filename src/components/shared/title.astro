@@ -1,18 +1,18 @@
 ---
-import Divider from "../ui/divider.astro";
+import Divider from "../ui/divider.astro"
 
-interface Props {
-  name: string;
-  class?: string;
+type Props = {
+  name: string
+  class?: string
 }
 
-const { name, class: className } = Astro.props;
+const { name, class: className } = Astro.props
 ---
 
 <h1
   class:list={[
     "uppercase font-bold flex flex-col items-center leading-none w-[fit-content]",
-    className,
+    className
   ]}
 >
   <div class="flex items-center w-full">

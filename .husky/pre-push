@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+git log --format=%s $(git rev-parse origin/main^)..HEAD | pnpm run commitlint
