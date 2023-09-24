@@ -1,23 +1,23 @@
 ---
-import Github from "../ui/svg/icons/github-icon.astro";
-import Link from "../ui/svg/icons/link-icon.astro";
-import OssLink from "./oss-link.astro";
+import Github from "../ui/svg/icons/github-icon.astro"
+import Link from "../ui/svg/icons/link-icon.astro"
+import OssLink from "./oss-link.astro"
 
-interface Props {
-  title: string;
-  description: string;
-  body: string;
-  link_demo?: string;
-  link_repository?: string;
+type Props = {
+  title: string
+  description: string
+  body: string
+  link_demo?: string
+  link_repository?: string
 }
 
-const { title, description, body, link_demo, link_repository } = Astro.props;
+const { title, description, body, link_demo, link_repository } = Astro.props
 const imageMap: Record<string, string> = {
   "Memora Date": "/memora.png",
   "One Hunter Theme": "/oht.png",
-  Spotigen: "/spotigen.png",
-};
-const bgImage = imageMap[title];
+  Spotigen: "/spotigen.png"
+}
+const bgImage = imageMap[title]
 ---
 
 <section
@@ -29,7 +29,7 @@ const bgImage = imageMap[title];
       background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${bgImage})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
+      backgroundRepeat: "no-repeat"
     }}
   >
     <header class="flex items-center font-bold text-xl sm:text-3xl gap-1">

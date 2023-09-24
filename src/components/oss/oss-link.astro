@@ -1,10 +1,10 @@
 ---
-interface Props {
-  href: string;
-  name: string;
-  class?: string;
+type Props = {
+  href: string
+  name: string
+  class?: string
 }
-const { href, name, class: className } = Astro.props;
+const { href, name, class: className } = Astro.props
 ---
 
 <a
