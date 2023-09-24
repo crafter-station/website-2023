@@ -1,9 +1,28 @@
 ---
+import { Image } from "astro:assets"
+import localTrainStation from "../images/train-station.png"
+import shadowBackground from "../images/shadow-background.svg"
 import Layout from "../layouts/layout.astro"
 import GlowLogo from "../components/ui/svg/icons/glow-logo.astro"
 ---
 
 <Layout title="Crafter Station | Home">
+  <div
+    class="-z-10 absolute w-full h-full bg-gradient-to-b from-[#0f0f0f] to-[#1c1c1c]"
+  >
+    <Image
+      src={localTrainStation}
+      alt="Train Station"
+      class="top-0 left-0 absolute -z-10 w-full h-full select-none"
+    />
+    <img
+      src={shadowBackground.src}
+      width={shadowBackground.width}
+      height={shadowBackground.height}
+      alt="Shadow Background"
+      class="top-0 left-0 absolute w-full h-full select-none"
+    />
+  </div>
   <main class="flex flex-col justify-center items-center h-screen gap-12">
     <h1
       class="text-white font-bold flex flex-col tracking-[14px] items-center leading-none"
@@ -14,8 +33,36 @@ import GlowLogo from "../components/ui/svg/icons/glow-logo.astro"
         <GlowLogo class="absolute top-[11px] right-[108px] p-5" />
       </span>
     </h1>
-    <p class="text-white text-4xl text-center">
+    <p class="text-white text-4xl text-center mb-10">
       Creating Next-Gen Web Experiences.
     </p>
+    <button
+      class="bg-[#1c1c1c] py-6 px-10 text-white text-2xl border-2 font-medium rounded-[6px] p-4"
+    >
+      Don&apos;t Trust Us? See for Yourself.
+    </button>
   </main>
 </Layout>
+
+<style>
+  button {
+    border-color: white;
+    box-shadow:
+      0px 0px 0px rgba(0, 0, 0, 0),
+      0px 0px 0px rgba(0, 0, 0, 0),
+      0px 0px 0px rgba(0, 0, 0, 0),
+      inset 0px 3px 27.88px rgba(255, 255, 255, 0.5);
+    transition:
+      box-shadow 0.3s ease-in-out,
+      border-color 0.3s ease-in-out;
+  }
+
+  button:hover {
+    border-color: #f6ba2e;
+    box-shadow:
+      0px 4px 4px rgba(0, 0, 0, 0.25),
+      0px 0px 83.16px rgba(247, 186, 45, 0.5),
+      0px 0px 23.76px rgba(247, 187, 46, 0.5),
+      inset 0px 3px 27.88px rgba(255, 255, 255, 0.5);
+  }
+</style>
