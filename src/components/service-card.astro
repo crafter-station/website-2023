@@ -1,28 +1,28 @@
 ---
-import Divider from "./ui/divider.astro";
-import Puzzle from "./ui/svg/puzzle.astro";
+import Divider from "./ui/divider.astro"
+import Puzzle from "./ui/svg/puzzle.astro"
 
-interface Props {
-  title: string;
-  body: string;
-  type: "large" | "small";
+type Props = {
+  title: string
+  body: string
+  type: "large" | "small"
 }
 
-const { title, body, type } = Astro.props;
-const isLarge = type === "large";
+const { title, body, type } = Astro.props
+const isLarge = type === "large"
 ---
 
 <section
   class="flex p-[1px] rounded-[20px] border border-white overflow-hidden relative w-full sm:min-h-[200px]"
 >
   <article class="p-[calc(1.5rem-1px)] rounded-lg text-white">
-    <h1 class="font-bold text-xl">{title}</h1>
-    <Divider class="mt-2" />
+    <h1 class="font-bold text-2xl">{title}</h1>
+    <Divider class="my-2" />
     <div class="flex items-center w-full h-full">
       <p
         class:list={[
-          "text-white text-justify self-start mt-5 w-full",
-          { "sm:w-2/3": isLarge },
+          "text-white text-xl text-justify self-start mt-5 w-full",
+          { "sm:w-2/3": isLarge }
         ]}
       >
         {body}
