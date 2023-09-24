@@ -8,8 +8,10 @@ module.exports = {
       options: {
         parser: 'astro',
         jsxSingleQuote: false,
+        endOfLine: 'auto',
       }
     }
   ],
   singleQuote: false,
+  endOfLine: 'auto',
 }

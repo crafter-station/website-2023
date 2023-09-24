@@ -1,0 +1,51 @@
+---
+import Layout from "../layouts/layout.astro";
+import Title from "../components/shared/title.astro";
+import OssCard from "../components/oss/oss-card.astro";
+import Memora from "../components/ui/svg/icons/memora-icon.astro"
+import OHT from "../components/ui/svg/icons/oht-icon.astro"
+import Spotigen from "../components/ui/svg/icons/spotigen-icon.astro"
+---
+<Layout title="Open Source">
+    <main class="flex justify-center items-center h-full w-full p-6">
+        <article
+          class="flex flex-col justify-center items-center gap-10 h-full w-[754px]"
+        >
+        <section class="flex flex-col gap-6">
+            <Title name="Open Source" />
+            <p class="text-lg text-white text-justify">
+                We love tinkering on the side, and sometimes our experiments turn into incredibly useful tools. As a proudly open-source organization, we offer these tools freely for anyone to use or modify. No strings attached, just good software doing its thing. Check out what we've been up to, and feel free to get involved.
+            </p>
+          </section>
+          <section class="flex flex-col gap-8">
+            <OssCard
+            title="Memora Date"
+            description="Yet Another Reminder App"
+            body="First project, big step. Memora Date offers a simple list of reminders, one-time or recurring events, and the ability to import contacts. Email alerts keep you on track."
+            link_demo="https://memora-date.vercel.app/"
+            link_repository="https://github.com/Railly/memora-date"
+            >
+             <Memora />
+            </OssCard>
+            <OssCard
+              title="One Hunter Theme"
+              description="Popular VSCode Theme"
+              body="Merging the best of Vercel Theme ▲ and One Dark Pro 🎨, One Hunter brings a unique aesthetic to your coding environment."
+              link_demo="https://marketplace.visualstudio.com/items?itemName=RaillyHugo.one-hunter"
+              link_repository="https://github.com/Railly/one-hunter-vscode"
+            >
+             <OHT class="border-2 border-white rounded-full" />
+            </OssCard>
+            <OssCard
+              title="Spotigen"
+              description="ChatGPT Plugin"
+              body="Simply type in what you're feeling or looking for, and Spotigen will generate a Spotify playlist to match. A straightforward way to discover new music."
+              link_demo="https://spotigen.vercel.app/"
+              link_repository="https://github.com/Railly/spotigen-chat-gpt-plugin"
+            >
+              <Spotigen class="border-2 border-white rounded-full" />
+            </OssCard>
+          </section>
+    </article>
+    </main>
+</Layout>

@@ -1,0 +1,50 @@
+---
+import ServiceCard from "../components/service-card.astro";
+import Title from "../components/shared/title.astro";
+import Layout from "../layouts/layout.astro";
+import { largeServiceCards, smallServiceCards } from "../data/service-cards.ts";
+---
+
+<Layout title="Services">
+  <main class="flex justify-center items-center h-full w-full p-6">
+    <article
+      class="flex flex-col justify-center items-center gap-10 h-full w-[754px]"
+    >
+      <section class="flex flex-col gap-6">
+        <Title name="Services" />
+        <p class="text-lg text-white text-justify">
+          We are Crafter Station, and our mission is simple: to exceed your
+          expectations. With tailored technological solutions, we aim not just
+          to meet your immediate needs, but also to provide you with a lasting
+          competitive edge.
+        </p>
+      </section>
+      <section class="flex flex-col gap-8">
+        <!--First two large cards -->
+        {
+          largeServiceCards
+            .slice(0, 2)
+            .map((card) => (
+              <ServiceCard title={card.title} body={card.body} type="large" />
+            ))
+        }
+        <!--Small cards -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {
+            smallServiceCards.map((card) => (
+              <ServiceCard title={card.title} body={card.body} type="small" />
+            ))
+          }
+        </section>
+        <!--Last large cards -->
+        {
+          largeServiceCards
+            .slice(2)
+            .map((card) => (
+              <ServiceCard title={card.title} body={card.body} type="large" />
+            ))
+        }
+      </section>
+    </article>
+  </main>
+</Layout>
