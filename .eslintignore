@@ -1,0 +1,4 @@
+tailwind.config.cjs
+.prettierrc.cjs
+astro.config.mjs
+.eslintrc.cjs
