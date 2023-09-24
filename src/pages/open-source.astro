@@ -1,10 +1,10 @@
 ---
-import Layout from "../layouts/layout.astro"
-import Title from "../components/shared/title.astro"
 import OssCard from "../components/oss/oss-card.astro"
+import Title from "../components/shared/title.astro"
 import Memora from "../components/ui/svg/icons/memora-icon.astro"
 import OHT from "../components/ui/svg/icons/oht-icon.astro"
 import Spotigen from "../components/ui/svg/icons/spotigen-icon.astro"
+import Layout from "../layouts/layout.astro"
 ---
 <Layout title="Crafter Station | Open Source">
     <main class="flex justify-center items-center h-full w-full p-6">
@@ -13,7 +13,7 @@ import Spotigen from "../components/ui/svg/icons/spotigen-icon.astro"
         >
         <section class="flex flex-col gap-6">
             <Title name="Open Source" />
-            <p class="text-lg text-white text-justify">
+            <p class="text-xl text-white text-justify px-6">
               We love tinkering on the side, and sometimes our experiments turn into
               incredibly useful tools. As a proudly open-source organization, we
               offer these tools freely for anyone to use or modify. No strings
@@ -29,7 +29,7 @@ import Spotigen from "../components/ui/svg/icons/spotigen-icon.astro"
             link_demo="https://memora-date.vercel.app/"
             link_repository="https://github.com/Railly/memora-date"
             >
-             <Memora />
+             <Memora class="w-10 h-10 md:w-14 md:h-14"/>
             </OssCard>
             <OssCard
               title="One Hunter Theme"
@@ -38,7 +38,7 @@ import Spotigen from "../components/ui/svg/icons/spotigen-icon.astro"
               link_demo="https://marketplace.visualstudio.com/items?itemName=RaillyHugo.one-hunter"
               link_repository="https://github.com/Railly/one-hunter-vscode"
             >
-             <OHT class="border-2 border-white rounded-full" />
+             <OHT class="border-2 border-white rounded-full min-w-[40px] min-h-[40px] w-10 h-10 md:w-14 md:h-14" />
             </OssCard>
             <OssCard
               title="Spotigen"
@@ -47,7 +47,7 @@ import Spotigen from "../components/ui/svg/icons/spotigen-icon.astro"
               link_demo="https://spotigen.vercel.app/"
               link_repository="https://github.com/Railly/spotigen-chat-gpt-plugin"
             >
-              <Spotigen class="border-2 border-white rounded-full" />
+              <Spotigen class="w-10 h-10 md:w-14 md:h-14" />
             </OssCard>
           </section>
     </article>
