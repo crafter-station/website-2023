@@ -1,0 +1,29 @@
+---
+type Props = {
+  class?: string
+  disabled?: boolean
+}
+
+const { class: className, disabled } = Astro.props
+
+const disabledClass = {
+  "border border-[#767676] rounded-md w-auto text-sm shadow-inner drop-shadow-2xl shadow-disable":
+    disabled,
+  "border border-[#767676] hover:border-[#F8BB2D] text-white rounded-md w-auto text-sm shadow-inner drop-shadow-2xl":
+    !disabled
+}
+---
+
+<button
+  class:list={[className, disabledClass]}
+  type="button"
+  disabled={disabled}
+>
+  <slot />
+</button>
+
+<style>
+  .shadow-disable {
+    box-shadow: inset 0px 3px 17px 0px rgba(255, 255, 255, 0.6);
+  }
+</style>

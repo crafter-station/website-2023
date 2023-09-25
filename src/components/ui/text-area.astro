@@ -1,0 +1,17 @@
+---
+import type { HTMLAttributes } from "astro/types"
+
+interface Props extends HTMLAttributes<"textarea"> {
+  class?: string
+}
+
+const { class: className, ...props } = Astro.props
+---
+
+<textarea
+  class:list={[
+    className,
+    "py-3 w-full rounded-md bg-white/0 border border-white px-3 text-sm placeholder-white"
+  ]}
+  rows="8"
+  {...props}></textarea>

@@ -1,0 +1,37 @@
+---
+import ContactForm from "./contact-form.astro"
+import NewsletterCard from "./newsletter-card.astro"
+import GlowLogo from "./ui/svg/icons/glow-logo.astro"
+import Divider from "./ui/divider.astro"
+---
+
+<footer class="flex flex-col gap-20 pb-10 w-full items-center">
+  <div class="flex flex-col w-[960px] gap-16">
+    <ContactForm />
+    <Divider class="opacity-50" />
+    <div class="flex flex-col gap-20">
+      <NewsletterCard />
+      <div class="text-white text-sm flex justify-between items-start">
+        <div class="w-[35%]">
+          <ul class="grid grid-cols-4 w-auto gap-y-3">
+            <li>TWITTER</li>
+            <li>FACEBOOK</li>
+            <li>INSTAGRAM</li>
+            <li>LINKEDIN</li>
+            <li>GITHUB</li>
+            <li>CAREERS</li>
+          </ul>
+        </div>
+        <div class="w-[30%] flex justify-center">
+          <GlowLogo />
+        </div>
+        <div class="w-[35%]">
+          <p class="text-base">
+            Designed and developed by Crafter Station <br />
+            <a href="#" class="underline">Cookies & privacy preferences</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

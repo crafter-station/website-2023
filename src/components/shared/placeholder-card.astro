@@ -1,0 +1,27 @@
+---
+type Props = {
+  class?: string
+}
+
+const { class: className, ...props } = Astro.props
+---
+
+<div
+  class:list={[
+    className,
+    "flex items-center justify-center w-full custom-border custom-fade-border aspect-[7/5]"
+  ]}
+  {...props}
+>
+  <slot />
+</div>
+
+<style>
+  .custom-border {
+    background-image: url("./custom-border.svg");
+  }
+  .custom-fade-border:last-child,
+  :nth-last-child(2) {
+    background-image: url("./custom-fade-border.svg");
+  }
+</style>
