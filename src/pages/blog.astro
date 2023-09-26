@@ -1,0 +1,34 @@
+---
+import Title from "../components/shared/title.astro"
+import Button from "../components/ui/button.astro"
+import Layout from "../layouts/layout.astro"
+import PlaceholderCard from "../components/shared/placeholder-card.astro"
+import FolderIcon from "../components/ui/svg/icons/folder-icon.astro"
+---
+
+<Layout title="Crafter Station | Archives">
+  <main class="flex justify-center items-center h-full pt-10">
+    <article
+      class="flex flex-col justify-center items-start gap-10 h-full w-[960px]"
+    >
+      <section class="flex flex-col gap-6">
+        <Title name="Archives" />
+        <div class="flex h-9 gap-4">
+          <Button class="w-40 bg-white/5">All categories</Button>
+          <Button class="w-28 bg-white/5">?</Button>
+          <Button class="w-28 bg-white/5">?</Button>
+          <Button class="w-28 bg-white/5">?</Button>
+        </div>
+      </section>
+      <section class="relative grid grid-cols-1 gap-6 w-full">
+        {
+          Array.from({ length: 2 }).map((_, i) => (
+            <PlaceholderCard class="aspect-[8/3]">
+              <FolderIcon index={i} />
+            </PlaceholderCard>
+          ))
+        }
+      </section>
+    </article>
+  </main>
+</Layout>

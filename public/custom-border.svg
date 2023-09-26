@@ -1,0 +1,17 @@
+<svg
+  width="100%"
+  height="100%"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect
+    width="100%"
+    height="100%"
+    fill="none"
+    stroke="white"
+    stroke-width="1"
+    stroke-dasharray="6, 9"
+    stroke-dashoffset="15"
+    stroke-linecap="square"
+  >
+  </rect>
+</svg>
