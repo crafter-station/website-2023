@@ -12,20 +12,34 @@ import Divider from "./ui/divider.astro"
     <div class="flex flex-col gap-20">
       <NewsletterCard />
       <div class="text-white text-sm flex justify-between items-start">
-        <div class="w-[35%]">
-          <ul class="grid grid-cols-4 w-auto gap-y-3">
-            <li>TWITTER</li>
-            <li>FACEBOOK</li>
-            <li>INSTAGRAM</li>
-            <li>LINKEDIN</li>
-            <li>GITHUB</li>
-            <li>CAREERS</li>
+        <div class="w-[40%]">
+          <ul
+            class="grid grid-cols-3 w-auto gap-x-3 gap-y-3 place-items-center"
+          >
+            <li>
+              <a href="#">TWITTER</a>
+            </li>
+            <li>
+              <a href="#">FACEBOOK</a>
+            </li>
+            <li>
+              <a href="#">INSTAGRAM</a>
+            </li>
+            <li>
+              <a href="#">LINKEDIN</a>
+            </li>
+            <li>
+              <a href="#">GITHUB</a>
+            </li>
+            <li>
+              <a href="#">CAREERS</a>
+            </li>
           </ul>
         </div>
         <div class="w-[30%] flex justify-center">
-          <GlowLogo />
+          <GlowLogo class="p-3" size={100} />
         </div>
-        <div class="w-[35%]">
+        <div class="w-[40%]">
           <p class="text-base">
             Designed and developed by Crafter Station <br />
             <a href="#" class="underline">Cookies & privacy preferences</a>
