@@ -29,14 +29,12 @@ module.exports = {
         "@typescript-eslint/naming-convention": "off",
         "@typescript-eslint/strict-boolean-expressions": "off",
         "react/react-in-jsx-scope": "off",
+        "@typescript-eslint/no-floating-promises": "off",
       },
     },
     {
       files: ["*.astro"],
-      extends: [
-        "plugin:astro/recommended",
-        "plugin:prettier/recommended",
-      ],
+      extends: ["plugin:astro/recommended", "plugin:prettier/recommended"],
       parser: "astro-eslint-parser",
       parserOptions: {
         parser: "@typescript-eslint/parser",
@@ -45,4 +43,9 @@ module.exports = {
       rules: {},
     },
   ],
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
 }

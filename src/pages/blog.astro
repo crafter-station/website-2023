@@ -7,20 +7,20 @@ import FolderIcon from "../components/ui/svg/icons/folder-icon.astro"
 ---
 
 <Layout title="Crafter Station | Archives" withFooter>
-  <main className="flex justify-center items-center h-full pt-10">
+  <main class="flex justify-center items-center h-full pt-10">
     <article
-      className="flex flex-col justify-center items-start gap-10 h-full w-[960px]"
+      class="flex flex-col justify-center items-start gap-10 h-full w-[960px]"
     >
-      <section className="flex flex-col gap-6">
+      <section class="flex flex-col gap-6">
         <Title name="Archives" />
-        <div className="flex h-9 gap-4">
+        <div class="flex h-9 gap-4">
           <Button class="w-40 bg-white/5">All categories</Button>
           <Button class="w-28 bg-white/5">?</Button>
           <Button class="w-28 bg-white/5">?</Button>
           <Button class="w-28 bg-white/5">?</Button>
         </div>
       </section>
-      <section className="relative grid grid-cols-1 gap-6 w-full fade-end">
+      <section class="relative grid grid-cols-1 gap-6 w-full fade-end">
         {
           Array.from({ length: 2 }).map((_, i) => (
             <PlaceholderCard class="aspect-[8/3]">

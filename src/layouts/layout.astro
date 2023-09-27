@@ -21,38 +21,38 @@ const { title, withFooter } = Astro.props
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body className="min-h-screen">
-    <div className="flex space-between h-auto">
+  <body class="min-h-screen">
+    <div class="flex space-between h-auto">
       <aside
-        className="h-screen w-[300px] sticky top-0 left-0 flex-grow pt-10 pl-20 flex flex-col justify-between"
+        class="h-screen w-[300px] sticky top-0 left-0 flex-grow pt-10 pl-20 flex flex-col justify-between"
       >
-        <div className="flex-grow">
+        <div class="flex-grow">
           <a href="/">
             <GlowLogo class="p-3" size={68} />
           </a>
         </div>
-        <ul className="flex flex-col gap-4 flex-grow justify-center">
-          <li className="text-lg text-white font-medium uppercase">
+        <ul class="flex flex-col gap-4 flex-grow justify-center">
+          <li class="text-lg text-white font-medium uppercase">
             <a href="/services">Services</a>
           </li>
-          <li className="text-lg text-white font-medium uppercase">
+          <li class="text-lg text-white font-medium uppercase">
             <a href="/clients">Clients</a>
           </li>
-          <li className="text-lg text-white font-medium uppercase">
+          <li class="text-lg text-white font-medium uppercase">
             <a href="/products">Products</a>
           </li>
-          <li className="text-lg text-white font-medium uppercase">
+          <li class="text-lg text-white font-medium uppercase">
             <a href="/open-source">Open Source</a>
           </li>
-          <li className="text-lg text-white font-medium uppercase">
+          <li class="text-lg text-white font-medium uppercase">
             <a href="/blog">Blog</a>
           </li>
         </ul>
-        <div className="flex-grow"></div>
+        <div class="flex-grow"></div>
       </aside>
       {
         withFooter ? (
-          <div className="flex flex-col gap-16">
+          <div class="flex flex-col gap-16">
             <slot />
             <Footer />
           </div>
@@ -61,17 +61,17 @@ const { title, withFooter } = Astro.props
         )
       }
       <aside
-        className="h-screen pt-10 w-[300px] sticky top-0 right-0 flex-grow flex flex-col items-center justify-between"
+        class="h-screen pt-10 w-[300px] sticky top-0 right-0 flex-grow flex flex-col items-center justify-between"
       >
-        <div className="flex-grow">
+        <div class="flex-grow">
           <a
-            className="text-white text-xl inline-flex justify-center font-medium bg-zinc-700 px-3 py-2 mx-10 rounded-md w-[180px] hover:bg-zinc-600 transition-colors"
+            class="text-white text-xl inline-flex justify-center font-medium bg-zinc-700 px-3 py-2 mx-10 rounded-md w-[180px] hover:bg-zinc-600 transition-colors"
             href="/contact"
           >
             Build with us
           </a>
         </div>
-        <ul className="flex flex-col flex-grow gap-6 justify-center">
+        <ul class="flex flex-col flex-grow gap-6 justify-center">
           <li>
             <a
               href="https://twitter.com/raillyhugo"
@@ -80,15 +80,15 @@ const { title, withFooter } = Astro.props
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="stroke-white"
+                class="stroke-white"
                 width="32"
                 height="32"
                 viewBox="0 0 24 24"
-                strokeWidth="2"
+                stroke-width="2"
                 stroke="currentColor"
                 fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
@@ -104,15 +104,15 @@ const { title, withFooter } = Astro.props
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="stroke-white"
+                class="stroke-white"
                 width="32"
                 height="32"
                 viewBox="0 0 24 24"
-                strokeWidth="2"
+                stroke-width="2"
                 stroke="currentColor"
                 fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path
@@ -129,15 +129,15 @@ const { title, withFooter } = Astro.props
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="stroke-white"
+                class="stroke-white"
                 width="32"
                 height="32"
                 viewBox="0 0 24 24"
-                strokeWidth="2"
+                stroke-width="2"
                 stroke="currentColor"
                 fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path
@@ -154,15 +154,15 @@ const { title, withFooter } = Astro.props
             <a href="https://instagram.com/" target="_blank" rel="noreferrer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="stroke-white"
+                class="stroke-white"
                 width="32"
                 height="32"
                 viewBox="0 0 24 24"
-                strokeWidth="2"
+                stroke-width="2"
                 stroke="currentColor"
                 fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path
@@ -174,7 +174,7 @@ const { title, withFooter } = Astro.props
             </a>
           </li>
         </ul>
-        <div className="flex-grow"></div>
+        <div class="flex-grow"></div>
       </aside>
     </div>
   </body>

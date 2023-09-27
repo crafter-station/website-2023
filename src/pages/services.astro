@@ -10,33 +10,33 @@ import {
 ---
 
 <Layout title="Crafter Station | Services" withFooter>
-  <main className="flex justify-center items-center h-full w-full p-6">
+  <main class="flex justify-center items-center h-full w-full p-6">
     <article
-      className="flex flex-col justify-center items-center gap-10 h-full w-[960px]"
+      class="flex flex-col justify-center items-center gap-10 h-full w-[960px]"
     >
-      <section className="flex flex-col gap-6">
+      <section class="flex flex-col gap-6">
         <Title name="Services" />
-        <p className="text-xl text-white text-justify px-6">
+        <p class="text-xl text-white text-justify px-6">
           We are Crafter Station, and our mission is simple: to exceed your
           expectations. With tailored technological solutions, we aim not just
           to meet your immediate needs, but also to provide you with a lasting
           competitive edge.
         </p>
       </section>
-      <section className="flex flex-col gap-8">
+      <section class="flex flex-col gap-8">
         <!--First two large cards -->
         {
-          largeServiceCards.slice(0, 2).map((card) => (
-            <Reveal client:visible>
+          largeServiceCards.slice(0, 2).map((card,index) => (
+            <Reveal client:visible animationOrder={index}>
               <ServiceCard title={card.title} body={card.body} type="large" />
             </Reveal>
           ))
         }
         <!--Small cards -->
-        <section className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <section class="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {
-            smallServiceCards.map((card) => (
-              <Reveal client:visible>
+            smallServiceCards.map((card, index) => (
+              <Reveal client:visible animationOrder={index+2}>
                 <ServiceCard title={card.title} body={card.body} type="small" />
               </Reveal>
             ))
@@ -44,8 +44,8 @@ import {
         </section>
         <!--Last large cards -->
         {
-          largeServiceCards.slice(2).map((card) => (
-            <Reveal client:visible>
+          largeServiceCards.slice(2).map((card,index) => (
+            <Reveal client:visible animationOrder={index+8}>
               <ServiceCard title={card.title} body={card.body} type="large" />
             </Reveal>
           ))

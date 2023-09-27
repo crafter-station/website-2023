@@ -21,10 +21,10 @@ const bgImage = imageMap[title]
 ---
 
 <section
-  className="flex p-[1px] rounded-[20px] border border-white overflow-hidden relative w-full"
+  class="flex p-[1px] rounded-[20px] border border-white overflow-hidden relative w-full"
 >
   <article
-    className="p-[calc(1.5rem-1px)] rounded-lg text-white bg-card"
+    class="p-[calc(1.5rem-1px)] rounded-lg text-white bg-card"
     style={{
       background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${bgImage})`,
       backgroundSize: "cover",
@@ -32,22 +32,20 @@ const bgImage = imageMap[title]
       backgroundRepeat: "no-repeat",
     }}
   >
-    <header className="flex items-center font-bold text-xl sm:text-3xl gap-1">
-      <h1 className="flex gap-2 items-center">
+    <header class="flex items-center font-bold text-xl sm:text-3xl gap-1">
+      <h1 class="flex gap-2 items-center">
         <slot />
         {title}
       </h1>
-      <span className="font-normal text-xs sm:text-lg mt-1"
-        >~ {description}</span
-      >
+      <span class="font-normal text-xs sm:text-lg mt-1">~ {description}</span>
     </header>
     <div
-      className="flex flex-col sm:flex-row justify-between items-center w-full gap-6 mt-5"
+      class="flex flex-col sm:flex-row justify-between items-center w-full gap-6 mt-5"
     >
-      <p className="text-white text-xl text-justify self-start w-full sm:w-2/3">
+      <p class="text-white text-xl text-justify self-start w-full sm:w-2/3">
         {body}
       </p>
-      <div className="flex sm:flex-col gap-6 sm:gap-2">
+      <div class="flex sm:flex-col gap-6 sm:gap-2">
         {
           link_demo && (
             <OssLink name="Live Demo" href={link_demo}>
