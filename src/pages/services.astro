@@ -26,7 +26,7 @@ import {
       <section class="flex flex-col gap-8">
         <!--First two large cards -->
         {
-          largeServiceCards.slice(0, 2).map((card,index) => (
+          largeServiceCards.slice(0, 2).map((card, index) => (
             <Reveal client:visible animationOrder={index}>
               <ServiceCard title={card.title} body={card.body} type="large" />
             </Reveal>
@@ -36,7 +36,7 @@ import {
         <section class="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {
             smallServiceCards.map((card, index) => (
-              <Reveal client:visible animationOrder={index+2}>
+              <Reveal client:visible animationOrder={index + 2}>
                 <ServiceCard title={card.title} body={card.body} type="small" />
               </Reveal>
             ))
@@ -44,8 +44,8 @@ import {
         </section>
         <!--Last large cards -->
         {
-          largeServiceCards.slice(2).map((card,index) => (
-            <Reveal client:visible animationOrder={index+8}>
+          largeServiceCards.slice(2).map((card, index) => (
+            <Reveal client:visible animationOrder={index + 8}>
               <ServiceCard title={card.title} body={card.body} type="large" />
             </Reveal>
           ))
