@@ -1,123 +1,42 @@
 ---
 type Props = {
   class?: string
-  index?: number
 }
 
-const { class: className, index } = Astro.props
-
-const isLastRow = index == 1
+const { class: className } = Astro.props
 ---
 
-{
-  isLastRow ? (
-    <svg
-      width="127"
-      height="127"
-      viewBox="0 0 127 127"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      class:list={[className]}
-    >
-      <g clip-path="url(#clip0_938_299)">
-        <path
-          d="M58.2083 100.542H26.4583C23.6515 100.542 20.9595 99.4267 18.9748 97.4419C16.99 95.4571 15.875 92.7652 15.875 89.9584V31.75C15.875 28.9431 16.99 26.2512 18.9748 24.2665C20.9595 22.2817 23.6515 21.1667 26.4583 21.1667H47.625L63.5 37.0417H100.542C103.349 37.0417 106.04 38.1567 108.025 40.1415C110.01 42.1262 111.125 44.8181 111.125 47.625V68.7917"
-          stroke="url(#paint0_linear_938_299)"
-          stroke-width="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M105.834 111.125L116.417 100.542L105.834 89.9583"
-          stroke="url(#paint1_linear_938_299)"
-          stroke-width="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M89.9583 89.9583L79.375 100.542L89.9583 111.125"
-          stroke="url(#paint2_linear_938_299)"
-          stroke-width="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </g>
-      <defs>
-        <linearGradient
-          id="paint0_linear_938_299"
-          x1="63.5"
-          y1="21.1667"
-          x2="63.5"
-          y2="100.542"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="paint1_linear_938_299"
-          x1="111.126"
-          y1="89.9583"
-          x2="111.126"
-          y2="111.125"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="paint2_linear_938_299"
-          x1="84.6667"
-          y1="89.9583"
-          x2="84.6667"
-          y2="111.125"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
-        </linearGradient>
-        <clipPath id="clip0_938_299">
-          <rect width="127" height="127" fill="white" />
-        </clipPath>
-      </defs>
-    </svg>
-  ) : (
-    <svg
-      width="127"
-      height="127"
-      viewBox="0 0 127 127"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      class:list={[className]}
-    >
-      <g clip-path="url(#clip0_938_131)">
-        <path
-          d="M58.2083 100.542H26.4583C23.6515 100.542 20.9595 99.4266 18.9748 97.4418C16.99 95.4571 15.875 92.7652 15.875 89.9583V31.75C15.875 28.9431 16.99 26.2512 18.9748 24.2664C20.9595 22.2817 23.6515 21.1666 26.4583 21.1666H47.625L63.5 37.0416H100.542C103.349 37.0416 106.04 38.1567 108.025 40.1414C110.01 42.1262 111.125 44.8181 111.125 47.625V68.7916"
-          stroke="white"
-          stroke-width="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M105.834 111.125L116.417 100.542L105.834 89.9584"
-          stroke="white"
-          stroke-width="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M89.9583 89.9584L79.375 100.542L89.9583 111.125"
-          stroke="white"
-          stroke-width="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </g>
-      <defs>
-        <clipPath id="clip0_938_131">
-          <rect width="127" height="127" fill="white" />
-        </clipPath>
-      </defs>
-    </svg>
-  )
-}
+<svg
+  width="127"
+  height="127"
+  viewBox="0 0 127 127"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  class:list={[className]}
+>
+  <g clip-path="url(#clip0_938_131)">
+    <path
+      d="M58.2083 100.542H26.4583C23.6515 100.542 20.9595 99.4266 18.9748 97.4418C16.99 95.4571 15.875 92.7652 15.875 89.9583V31.75C15.875 28.9431 16.99 26.2512 18.9748 24.2664C20.9595 22.2817 23.6515 21.1666 26.4583 21.1666H47.625L63.5 37.0416H100.542C103.349 37.0416 106.04 38.1567 108.025 40.1414C110.01 42.1262 111.125 44.8181 111.125 47.625V68.7916"
+      stroke="white"
+      stroke-width="4"
+      stroke-linecap="round"
+      stroke-linejoin="round"></path>
+    <path
+      d="M105.834 111.125L116.417 100.542L105.834 89.9584"
+      stroke="white"
+      stroke-width="4"
+      stroke-linecap="round"
+      stroke-linejoin="round"></path>
+    <path
+      d="M89.9583 89.9584L79.375 100.542L89.9583 111.125"
+      stroke="white"
+      stroke-width="4"
+      stroke-linecap="round"
+      stroke-linejoin="round"></path>
+  </g>
+  <defs>
+    <clipPath id="clip0_938_131">
+      <rect width="127" height="127" fill="white"></rect>
+    </clipPath>
+  </defs>
+</svg>
