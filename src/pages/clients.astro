@@ -1,0 +1,53 @@
+---
+import Title from "../components/shared/title.astro"
+import Layout from "../layouts/layout.astro"
+import PlaceholderCard from "../components/shared/placeholder-card.astro"
+import DiamondIcon from "../components/ui/svg/icons/diamond-icon.astro"
+---
+
+<Layout title="Crafter Station | Clients" withFooter>
+  <main class="flex justify-center items-center h-full pt-10">
+    <article
+      class="flex flex-col justify-center items-center gap-10 h-full w-[960px]"
+    >
+      <section class="flex flex-col gap-6">
+        <Title name="Clients" />
+        <p class="text-xl text-white text-justify px-6">
+          Don't see any clients showcased yet? That's because we're focusing on
+          you—our next potential success story. We're all about crafting
+          tailored solutions that meet your needs, and we can't wait to make you
+          proud enough to join this space. Build with us!
+        </p>
+      </section>
+      <section class="relative grid grid-cols-2 gap-6 w-full fade-end">
+        {
+          Array.from({ length: 4 }).map((_, i) => (
+            <PlaceholderCard>
+              <DiamondIcon />
+            </PlaceholderCard>
+          ))
+        }
+      </section>
+    </article>
+  </main>
+</Layout>
+
+<style>
+  .fade-end {
+    position: relative;
+  }
+  .fade-end:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgb(0, 0, 0) 80%
+    );
+    width: 100%;
+    height: 20em;
+  }
+</style>

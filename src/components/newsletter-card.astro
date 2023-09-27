@@ -1,0 +1,19 @@
+---
+import Button from "./ui/button.astro"
+import Input from "./ui/input.astro"
+---
+
+<div class="flex justify-center bg-white/5 text-white rounded-lg gap-6 py-10">
+  <form class="w-10/12 flex flex-col gap-7">
+    <div class="flex flex-col gap-1">
+      <h1 class="font-bold text-lg">Join our email newsletter</h1>
+      <p class="text-md">
+        Get our latest posts straight to your inbox. Unsubscribe anytime
+      </p>
+    </div>
+    <div class="flex gap-6">
+      <Input placeholder="Your email" type="text" class="w-full" />
+      <Button class="w-[35%]" disabled>Susbcribe</Button>
+    </div>
+  </form>
+</div>
