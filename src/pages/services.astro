@@ -1,9 +1,9 @@
 ---
 import ServiceCard from "../components/service-card.astro"
 import Title from "../components/shared/title.astro"
+import Reveal from "../components/ui/reveal";
 import Layout from "../layouts/layout.astro"
-import GlowLogo from "../components/ui/svg/icons/glow-logo.astro"
-import { largeServiceCards, smallServiceCards } from "../data/service-cards.ts"
+import { largeServiceCards, smallServiceCards } from "../lib/data/service-cards.ts"
 ---
 
 <Layout title="Crafter Station | Services" withFooter>
@@ -26,14 +26,18 @@ import { largeServiceCards, smallServiceCards } from "../data/service-cards.ts"
           largeServiceCards
             .slice(0, 2)
             .map((card) => (
-              <ServiceCard title={card.title} body={card.body} type="large" />
+              <Reveal client:visible>
+                <ServiceCard title={card.title} body={card.body} type="large" />
+              </Reveal>
             ))
         }
         <!--Small cards -->
         <section class="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {
             smallServiceCards.map((card) => (
+            <Reveal client:visible>
               <ServiceCard title={card.title} body={card.body} type="small" />
+            </Reveal>
             ))
           }
         </section>
@@ -42,7 +46,9 @@ import { largeServiceCards, smallServiceCards } from "../data/service-cards.ts"
           largeServiceCards
             .slice(2)
             .map((card) => (
-              <ServiceCard title={card.title} body={card.body} type="large" />
+              <Reveal client:visible>
+                <ServiceCard title={card.title} body={card.body} type="large" />
+              </Reveal>
             ))
         }
       </section>
