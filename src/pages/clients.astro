@@ -5,7 +5,7 @@ import PlaceholderCard from "../components/shared/placeholder-card.astro"
 import DiamondIcon from "../components/ui/svg/icons/diamond-icon.astro"
 ---
 
-<Layout title="Crafter Station | Clients">
+<Layout title="Crafter Station | Clients" withFooter>
   <main class="flex justify-center items-center h-full pt-10">
     <article
       class="flex flex-col justify-center items-center gap-10 h-full w-[960px]"
@@ -23,7 +23,7 @@ import DiamondIcon from "../components/ui/svg/icons/diamond-icon.astro"
         {
           Array.from({ length: 4 }).map((_, i) => (
             <PlaceholderCard>
-              <DiamondIcon index={i} />
+              <DiamondIcon />
             </PlaceholderCard>
           ))
         }
