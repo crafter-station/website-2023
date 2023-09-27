@@ -6,20 +6,20 @@ import LightbulbIcon from "../components/ui/svg/icons/lightbulb-icon.astro"
 ---
 
 <Layout title="Crafter Station | Products" withFooter>
-  <main class="flex justify-center items-center h-full pt-10">
+  <main className="flex justify-center items-center h-full pt-10">
     <article
-      class="flex flex-col justify-center items-center gap-10 h-full w-[960px]"
+      className="flex flex-col justify-center items-center gap-10 h-full w-[960px]"
     >
-      <section class="flex flex-col gap-6">
+      <section className="flex flex-col gap-6">
         <Title name="Products" />
-        <p class="text-xl text-white text-justify px-6">
+        <p className="text-xl text-white text-justify px-6">
           No Products Yet? That's because we're busy building something
           incredible for you. We're all about creating bespoke solutions
           designed to meet your specific needs. Eager to see your project listed
           here? Let's start crafting your success story today!
         </p>
       </section>
-      <section class="relative grid grid-cols-2 gap-6 w-full fade-end">
+      <section className="relative grid grid-cols-2 gap-6 w-full fade-end">
         {
           Array.from({ length: 4 }).map((_, i) => (
             <PlaceholderCard>

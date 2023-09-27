@@ -20,12 +20,12 @@ const Reveal = ({ children, animationOrder = 1 }: Props) => {
   return (
     <motion.section
       ref={ref}
-      initial='hidden'
-      className='flex w-full'
+      initial="hidden"
+      className="flex w-full"
       animate={mainControls}
       variants={{
         visible: { opacity: 1, translateX: 0, translateY: 0 },
-        hidden: { opacity: 0, translateX: -50, translateY: -50 }
+        hidden: { opacity: 0, translateX: -50, translateY: -50 },
       }}
       transition={{ duration: 0.7, delay: 0.2 * (animationOrder + 1) }}
     >

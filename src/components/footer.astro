@@ -5,16 +5,16 @@ import GlowLogo from "./ui/svg/icons/glow-logo.astro"
 import Divider from "./ui/divider.astro"
 ---
 
-<footer class="flex flex-col gap-20 pb-10 w-full items-center">
-  <div class="flex flex-col w-[960px] gap-16">
+<footer className="flex flex-col gap-20 pb-10 w-full items-center">
+  <div className="flex flex-col w-[960px] gap-16">
     <ContactForm />
     <Divider class="opacity-50" />
-    <div class="flex flex-col gap-20">
+    <div className="flex flex-col gap-20">
       <NewsletterCard />
-      <div class="text-white text-sm flex justify-between items-start">
-        <div class="w-[40%]">
+      <div className="text-white text-sm flex justify-between items-start">
+        <div className="w-[40%]">
           <ul
-            class="grid grid-cols-3 w-auto gap-x-3 gap-y-3 place-items-center"
+            className="grid grid-cols-3 w-auto gap-x-3 gap-y-3 place-items-center"
           >
             <li>
               <a href="#">TWITTER</a>
@@ -36,13 +36,13 @@ import Divider from "./ui/divider.astro"
             </li>
           </ul>
         </div>
-        <div class="w-[30%] flex justify-center">
+        <div className="w-[30%] flex justify-center">
           <GlowLogo class="p-3" size={100} />
         </div>
-        <div class="w-[40%]">
-          <p class="text-base">
+        <div className="w-[40%]">
+          <p className="text-base">
             Designed and developed by Crafter Station <br />
-            <a href="#" class="underline">Cookies & privacy preferences</a>
+            <a href="#" className="underline">Cookies & privacy preferences</a>
           </p>
         </div>
       </div>

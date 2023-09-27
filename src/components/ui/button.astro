@@ -1,5 +1,5 @@
 ---
-type Props = {
+interface Props {
   class?: string
   disabled?: boolean
 }
@@ -10,7 +10,7 @@ const disabledClass = {
   "bg-[#1c1c1c] text-white text-md border-2 font-medium rounded-[6px]":
     !disabled,
   "border border-[#767676] hover:border-[#F8BB2D] text-white rounded-md text-sm shadow-inner drop-shadow-2xl":
-    disabled
+    disabled,
 }
 ---
 
