@@ -3,7 +3,7 @@ import "@fontsource-variable/saira"
 import Footer from "../components/footer.astro"
 import GlowLogo from "../components/ui/svg/icons/glow-logo.astro"
 
-type Props = {
+interface Props {
   title: string
   withFooter?: boolean
 }
@@ -73,7 +73,11 @@ const { title, withFooter } = Astro.props
         </div>
         <ul class="flex flex-col flex-grow gap-6 justify-center">
           <li>
-            <a href="https://twitter.com/raillyhugo" target="_blank">
+            <a
+              href="https://twitter.com/raillyhugo"
+              target="_blank"
+              rel="noreferrer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="stroke-white"
@@ -93,7 +97,11 @@ const { title, withFooter } = Astro.props
             </a>
           </li>
           <li>
-            <a href="https://github.com/crafter-station" target="_blank">
+            <a
+              href="https://github.com/crafter-station"
+              target="_blank"
+              rel="noreferrer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="stroke-white"
@@ -114,7 +122,11 @@ const { title, withFooter } = Astro.props
             </a>
           </li>
           <li>
-            <a href="https://linkedin.com/in/railly-hugo" target="_blank">
+            <a
+              href="https://linkedin.com/in/railly-hugo"
+              target="_blank"
+              rel="noreferrer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="stroke-white"
@@ -139,7 +151,7 @@ const { title, withFooter } = Astro.props
             </a>
           </li>
           <li>
-            <a href="https://instagram.com/" target="_blank">
+            <a href="https://instagram.com/" target="_blank" rel="noreferrer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="stroke-white"

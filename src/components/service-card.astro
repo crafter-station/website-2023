@@ -2,7 +2,7 @@
 import Divider from "./ui/divider.astro"
 import Puzzle from "./ui/svg/puzzle.astro"
 
-type Props = {
+interface Props {
   title: string
   body: string
   type: "large" | "small"
@@ -22,7 +22,7 @@ const isLarge = type === "large"
       <p
         class:list={[
           "text-white text-xl text-justify self-start mt-5 w-full",
-          { "sm:w-2/3": isLarge }
+          { "sm:w-2/3": isLarge },
         ]}
       >
         {body}

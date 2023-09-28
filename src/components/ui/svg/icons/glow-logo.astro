@@ -1,5 +1,5 @@
 ---
-type Props = {
+interface Props {
   class?: string
   size?: number
 }
@@ -10,7 +10,7 @@ const { class: className, size } = Astro.props
 <svg
   class:list={[
     "border-4 border-[#F8BB2D] w-max rounded-full bg-black",
-    className
+    className,
   ]}
   width={size || 93}
   height={size || 98}

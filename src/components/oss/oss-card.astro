@@ -3,7 +3,7 @@ import Github from "../ui/svg/icons/github-icon.astro"
 import Link from "../ui/svg/icons/link-icon.astro"
 import OssLink from "./oss-link.astro"
 
-type Props = {
+interface Props {
   title: string
   description: string
   body: string
@@ -15,7 +15,7 @@ const { title, description, body, link_demo, link_repository } = Astro.props
 const imageMap: Record<string, string> = {
   "Memora Date": "/memora.png",
   "One Hunter Theme": "/oht.png",
-  Spotigen: "/spotigen.png"
+  Spotigen: "/spotigen.png",
 }
 const bgImage = imageMap[title]
 ---
@@ -29,7 +29,7 @@ const bgImage = imageMap[title]
       background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${bgImage})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
-      backgroundRepeat: "no-repeat"
+      backgroundRepeat: "no-repeat",
     }}
   >
     <header class="flex items-center font-bold text-xl sm:text-3xl gap-1">
@@ -40,12 +40,12 @@ const bgImage = imageMap[title]
       <span class="font-normal text-xs sm:text-lg mt-1">~ {description}</span>
     </header>
     <div
-      class="flex flex-col sm:flex-row justify-between items-center w-full h-full gap-10 mt-5"
+      class="flex flex-col sm:flex-row justify-between items-center w-full gap-6 mt-5"
     >
       <p class="text-white text-xl text-justify self-start w-full sm:w-2/3">
         {body}
       </p>
-      <div class="flex sm:flex-col w-full sm:w-1/3 h-full gap-6 sm:gap-2">
+      <div class="flex sm:flex-col gap-6 sm:gap-2">
         {
           link_demo && (
             <OssLink name="Live Demo" href={link_demo}>
