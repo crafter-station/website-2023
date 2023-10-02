@@ -1,5 +1,6 @@
 ---
 import "@fontsource-variable/saira"
+import { ViewTransitions, fade } from "astro:transitions"
 import Footer from "../components/footer.astro"
 import GlowLogo from "../components/ui/svg/icons/glow-logo.astro"
 
@@ -20,6 +21,7 @@ const { title, withFooter } = Astro.props
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <ViewTransitions />
   </head>
   <body class="min-h-screen">
     <div class="flex space-between h-auto">
@@ -177,34 +179,34 @@ const { title, withFooter } = Astro.props
         <div class="flex-grow"></div>
       </aside>
     </div>
+    <style is:global>
+      html {
+        font-family: system-ui, sans-serif;
+        background: black;
+        background-size: 224px;
+      }
+      code {
+        font-family:
+          Menlo,
+          Monaco,
+          Lucida Console,
+          Liberation Mono,
+          DejaVu Sans Mono,
+          Bitstream Vera Sans Mono,
+          Courier New,
+          monospace;
+      }
+
+      body {
+        scrollbar-gutter: stable;
+      }
+
+      .text-stroke-1 {
+        -webkit-text-stroke: 1px white;
+      }
+      .text-stroke-3 {
+        -webkit-text-stroke: 3px white;
+      }
+    </style>
   </body>
 </html>
-<style is:global>
-  html {
-    font-family: system-ui, sans-serif;
-    background: black;
-    background-size: 224px;
-  }
-  code {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      Liberation Mono,
-      DejaVu Sans Mono,
-      Bitstream Vera Sans Mono,
-      Courier New,
-      monospace;
-  }
-
-  body {
-    scrollbar-gutter: stable;
-  }
-
-  .text-stroke-1 {
-    -webkit-text-stroke: 1px white;
-  }
-  .text-stroke-3 {
-    -webkit-text-stroke: 3px white;
-  }
-</style>
