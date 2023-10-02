@@ -5,13 +5,22 @@ interface Props extends HTMLAttributes<"input"> {
   class?: string
 }
 
-const { class: className, ...props } = Astro.props
+const { class: className, disabled, ...props } = Astro.props
+
+const disabledClass = {
+  "cursor-not-allowed border border-neutral-500 placeholder:text-neutral-500 bg-neutral-800":
+    disabled,
+  "focus-within:border-[#f6ba2e]/70 focus-within:outline-none bg-white/0 border border-white placeholder-white":
+    !disabled
+}
 ---
 
 <input
   class:list={[
+    "py-1 h-10 w-auto rounded-md px-3 text-md",
     className,
-    "focus-within:border-[#f6ba2e]/70 focus-within:outline-none py-1 h-10 w-auto rounded-md bg-white/0 border border-white px-3 text-md placeholder-white",
+    disabledClass
   ]}
+  disabled={disabled}
   {...props}
 />

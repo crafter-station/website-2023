@@ -1,5 +1,5 @@
 ---
-import { fade } from "astro:transitions"
+import { slide } from "astro:transitions"
 import Divider from "../ui/divider.astro"
 
 interface Props {
@@ -26,7 +26,10 @@ const { name, class: className } = Astro.props
     </span>
     <Divider />
   </div>
-  <p class="text-white text-7xl" transition:animate="initial">
+  <p
+    class="text-white text-7xl"
+    transition:animate={slide({ duration: "0.4s" })}
+  >
     {name}
   </p>
 </h1>
