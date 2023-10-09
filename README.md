@@ -5,5 +5,5 @@
 </h3>
 
 <p align="center">
-  Coming soon...2.0
+  Coming soon...3.0
 </p>
