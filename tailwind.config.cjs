@@ -6,9 +6,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Saira Variable", ...defaultTheme.fontFamily.sans]
-      }
-    }
+        sans: ["Geist Variable", ...defaultTheme.fontFamily.sans],
+        mono: ["Geist Mono Variable", ...defaultTheme.fontFamily.mono],
+      },
+    },
   },
-  plugins: []
+  plugins: [],
 }

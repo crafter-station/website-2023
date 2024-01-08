@@ -1,0 +1,12 @@
+{
+  "es": {
+    "homepage": {
+      "welcome": "Bienvenido a Crafter Station"
+    }
+  },
+  "en": {
+    "homepage": {
+      "welcome": "Welcome to Crafter Station"
+    }
+  }
+}
