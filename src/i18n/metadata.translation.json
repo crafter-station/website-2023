@@ -1,0 +1,70 @@
+{
+  "es": {
+    "homepage": {
+      "title": "Crafter Station | Inicio",
+      "description": "Descubre Crafter Station: Innovación y tecnología al servicio de la comunidad. Conoce nuestras soluciones de software y proyectos de código abierto.",
+      "openGraph": {
+        "title": "Crafter Station | Inicio",
+        "description": "Descubre Crafter Station: Innovación y tecnología al servicio de la comunidad. Conoce nuestras soluciones de software y proyectos de código abierto.",
+        "url": "https://crafter-station.com/es",
+        "images": [
+          {
+            "url": "https://crafter-station.com/images/homepage-es.png",
+            "width": 1200,
+            "height": 630,
+            "alt": "Crafter Station Inicio"
+          }
+        ]
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Crafter Station | Inicio",
+        "description": "Descubre Crafter Station: Innovación y tecnología al servicio de la comunidad. Conoce nuestras soluciones de software y proyectos de código abierto.",
+        "image": "https://crafter-station.com/images/twitter-homepage-es.png"
+      },
+      "keywords": [
+        "Crafter Station",
+        "Inicio",
+        "Tecnología",
+        "Innovación",
+        "Perú",
+        "Desarrollo de Software",
+        "Open Source"
+      ]
+    }
+  },
+  "en": {
+    "homepage": {
+      "title": "Crafter Station | Home",
+      "description": "Explore Crafter Station: Innovation and technology serving the community. Discover our software solutions and open-source projects.",
+      "openGraph": {
+        "title": "Crafter Station | Home",
+        "description": "Explore Crafter Station: Innovation and technology serving the community. Discover our software solutions and open-source projects.",
+        "url": "https://crafter-station.com/en",
+        "images": [
+          {
+            "url": "https://crafter-station.com/images/homepage-en.png",
+            "width": 1200,
+            "height": 630,
+            "alt": "Crafter Station Home"
+          }
+        ]
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Crafter Station | Home",
+        "description": "Explore Crafter Station: Innovation and technology serving the community. Discover our software solutions and open-source projects.",
+        "image": "https://crafter-station.com/images/twitter-homepage-en.png"
+      },
+      "keywords": [
+        "Crafter Station",
+        "Home",
+        "Technology",
+        "Innovation",
+        "Peru",
+        "Software Development",
+        "Open Source"
+      ]
+    }
+  }
+}

@@ -1,0 +1,66 @@
+---
+import type { Metadata } from "@/lib/metadata.ts"
+
+interface Props {
+  metadata: Metadata
+}
+
+const { metadata } = Astro.props
+---
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="generator" content="Astro" />
+  <title>{metadata.title}</title>
+  <meta name="description" content={metadata.description} />
+  {
+    metadata.keywords && (
+      <meta name="keywords" content={metadata.keywords.join(", ")} />
+    )
+  }
+  {
+    metadata.openGraph && (
+      <>
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta
+          property="og:description"
+          content={metadata.openGraph.description}
+        />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        {metadata.openGraph.images &&
+          metadata.openGraph.images.map((image) => (
+            <>
+              <meta property="og:image" content={image.url} />
+              <meta property="og:image:alt" content={image.alt} />
+              {image.width && (
+                <meta property="og:image:width" content={String(image.width)} />
+              )}
+              {image.height && (
+                <meta
+                  property="og:image:height"
+                  content={String(image.height)}
+                />
+              )}
+            </>
+          ))}
+      </>
+    )
+  }
+
+  {
+    metadata.twitter && (
+      <>
+        <meta name="twitter:card" content={metadata.twitter.card} />
+        <meta name="twitter:title" content={metadata.twitter.title} />
+        <meta
+          name="twitter:description"
+          content={metadata.twitter.description}
+        />
+        <meta name="twitter:image" content={metadata.twitter.image} />
+      </>
+    )
+  }
+</head>

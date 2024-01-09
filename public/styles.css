@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Geist Variable";
+  src: url("./fonts/GeistVariableVF.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Variable Mono";
+  src: url("./fonts/GeistMonoVariableVF.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}

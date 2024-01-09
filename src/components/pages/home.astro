@@ -1,0 +1,11 @@
+---
+import Layout from "@/layouts/layout.astro"
+import { getTranslations, getMetadata } from "@/i18n/utils"
+
+const translations = getTranslations(Astro.currentLocale)
+const metadata = getMetadata(Astro.currentLocale)
+---
+
+<Layout metadata={metadata.homepage}>
+  <div class="font-bold text-2xl">{translations.homepage.welcome}</div>
+</Layout>
