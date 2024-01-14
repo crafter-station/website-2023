@@ -1,6 +1,8 @@
 {
   "es": {
-    "homepage": {
+    "hero": {
+      "design": "Diseño",
+      "engineering": "Ingeniería",
       "welcomeTitle": "Construimos software de <span class='animated-yellow-gradient'>alta calidad</span><br/> que impulsa tu negocio",
       "subtitle": "Sin complicaciones. Sin reclutamiento. Solo resultados.",
       "callToActionPrimary": "Agenda una llamada",
@@ -11,7 +13,9 @@
     }
   },
   "en": {
-    "homepage": {
+    "hero": {
+      "design": "Design",
+      "engineering": "Engineering",
       "welcomeTitle": "We build <span class='animated-yellow-gradient'>high-quality</span></br> software that drives your business",
       "subtitle": "No hassle. No recruitment. Just results.",
       "callToActionPrimary": "Schedule a call",
