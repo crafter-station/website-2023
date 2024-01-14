@@ -3,7 +3,7 @@ import metadataJSON from "./metadata.translation.json"
 
 type Locale = keyof typeof translationsJSON
 
-export const getTranslations = (locale: string | undefined) => {
+export const getI18N = (locale: string | undefined) => {
   if (!locale) return translationsJSON.es
   return translationsJSON[locale as Locale]
 }

@@ -1,5 +1,6 @@
 ---
 import type { Metadata } from "@/lib/metadata.ts"
+import { ViewTransitions } from "astro:transitions"
 
 interface Props {
   metadata: Metadata
@@ -63,4 +64,5 @@ const { metadata } = Astro.props
       </>
     )
   }
+  <ViewTransitions />
 </head>
