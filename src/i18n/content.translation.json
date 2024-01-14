@@ -13,7 +13,7 @@
       "CALL_TO_ACTION_PRIMARY": "Agenda una llamada",
       "CALL_TO_ACTION_SECONDARY": "Envíanos un Whatsapp",
       "TITLE": "Crafter Station - Construimos software de alta calidad",
-      "DESCRIPTION": "De sitios web a soluciones empresariales, <strong TITLEss='text-white'>impulsamos tu crecimiento</strong>.",
+      "DESCRIPTION": "De sitios web a soluciones empresariales, <strong class='text-white font-semibold'>impulsamos tu crecimiento</strong>.",
       "VIEW_RECENT_WORK": "Ver trabajos recientes",
       "RECENT_WORK": "Trabajos recientes"
     }
@@ -32,7 +32,7 @@
       "CALL_TO_ACTION_PRIMARY": "Schedule a call",
       "CALL_TO_ACTION_SECONDARY": "Send us a Whatsapp",
       "TITLE": "Crafter Station - We build high-quality software",
-      "DESCRIPTION": "From websites to business solutions, <strong>we boost your growth</strong>.",
+      "DESCRIPTION": "From websites to business solutions, <strong class='text-white font-semibold'>we boost your growth</strong>.",
       "VIEW_RECENT_WORK": "View recent work",
       "RECENT_WORK": "Recent work"
     }

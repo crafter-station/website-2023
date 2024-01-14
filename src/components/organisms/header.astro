@@ -3,7 +3,7 @@ import { getI18N } from "@/i18n/utils"
 import CrafterStationIcon from "@/components/icons/crafter-station-icon.astro"
 import BrandGithub from "../icons/brand-github.astro"
 import BrandLinkedin from "../icons/brand-linkedin.astro"
-import BrandXIcon from "../icons/brand-x-icon.astro"
+import BrandX from "../icons/brand-x.astro"
 import { LanguageSwitcher } from "@/components/molecules/language-switcher"
 
 const { currentLocale } = Astro
@@ -11,9 +11,9 @@ const { currentLocale } = Astro
 const i18n = getI18N(currentLocale)
 ---
 
-<header class="flex flex-col items-center justify-center w-full h-32">
+<header class="flex flex-col items-center justify-center w-full h-40">
   <nav class="flex w-full justify-between px-48">
-    <ul class="flex gap-10 w-[36ch]">
+    <ul class="flex gap-10 w-[36ch] text-lg">
       <li><a href="/about">{i18n.HEADER.ABOUT}</a></li>
       <li><a href="/contact">{i18n.HEADER.SERVICES}</a></li>
       <li><a href="/contact">{i18n.HEADER.FAQ}</a></li>
@@ -29,7 +29,7 @@ const i18n = getI18N(currentLocale)
           target="_blank"
           rel="noopener noreferrer"
         >
-          <BrandXIcon />
+          <BrandX />
         </a>
       </li>
       <li>
