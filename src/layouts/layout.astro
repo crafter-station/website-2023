@@ -1,5 +1,6 @@
 ---
 import Head from "@/components/molecules/head.astro"
+import Header from "@/components/organisms/header.astro"
 import type { Metadata } from "@/lib/metadata.ts"
 
 interface Props {
@@ -11,7 +12,8 @@ const { metadata } = Astro.props
 
 <html lang={Astro.currentLocale}>
   <Head metadata={metadata} />
-  <body class="min-h-screen font-sans antialiased bg-[#131313]">
+  <body class="min-h-screen font-sans antialiased bg-[#131313] text-white">
+    <Header />
     <slot />
     <style is:global>
       .animated-yellow-gradient {

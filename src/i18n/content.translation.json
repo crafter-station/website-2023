@@ -1,28 +1,40 @@
 {
   "es": {
-    "hero": {
-      "design": "Diseño",
-      "engineering": "Ingeniería",
-      "welcomeTitle": "Construimos software de <span class='animated-yellow-gradient'>alta calidad</span><br/> que impulsa tu negocio",
-      "subtitle": "Sin complicaciones. Sin reclutamiento. Solo resultados.",
-      "callToActionPrimary": "Agenda una llamada",
-      "callToActionSecondary": "Envíanos un Whatsapp",
-      "title": "Crafter Station - Construimos software de alta calidad",
-      "description": "De sitios web a soluciones empresariales, <strong class='text-white'>impulsamos tu crecimiento</strong>.",
-      "viewRecentWork": "Ver trabajos recientes"
+    "HEADER": {
+      "ABOUT": "Nosotros",
+      "SERVICES": "Servicios",
+      "FAQ": "Preguntas frecuentes"
+    },
+    "HERO": {
+      "DESIGN": "Diseño",
+      "ENGINEERING": "Ingeniería",
+      "WELCOME_TITLE": "Construimos software de <span class='animated-yellow-gradient'>alta calidad</span><br/> que impulsa tu negocio",
+      "SUBTITLE": "Sin complicaciones. Sin reclutamiento. Solo resultados.",
+      "CALL_TO_ACTION_PRIMARY": "Agenda una llamada",
+      "CALL_TO_ACTION_SECONDARY": "Envíanos un Whatsapp",
+      "TITLE": "Crafter Station - Construimos software de alta calidad",
+      "DESCRIPTION": "De sitios web a soluciones empresariales, <strong TITLEss='text-white'>impulsamos tu crecimiento</strong>.",
+      "VIEW_RECENT_WORK": "Ver trabajos recientes",
+      "RECENT_WORK": "Trabajos recientes"
     }
   },
   "en": {
-    "hero": {
-      "design": "Design",
-      "engineering": "Engineering",
-      "welcomeTitle": "We build <span class='animated-yellow-gradient'>high-quality</span></br> software that drives your business",
-      "subtitle": "No hassle. No recruitment. Just results.",
-      "callToActionPrimary": "Schedule a call",
-      "callToActionSecondary": "Send us a Whatsapp",
-      "title": "Crafter Station - We build high-quality software",
-      "description": "From websites to business solutions, <strong>we boost your growth</strong>.",
-      "viewRecentWork": "View recent work"
+    "HEADER": {
+      "ABOUT": "About",
+      "SERVICES": "Services",
+      "FAQ": "FAQ"
+    },
+    "HERO": {
+      "DESIGN": "DESIGN",
+      "ENGINEERING": "ENGINEERING",
+      "WELCOME_TITLE": "We build <span class='animated-yellow-gradient'>high-quality</span></br> software that drives your business",
+      "SUBTITLE": "No hassle. No recruitment. Just results.",
+      "CALL_TO_ACTION_PRIMARY": "Schedule a call",
+      "CALL_TO_ACTION_SECONDARY": "Send us a Whatsapp",
+      "TITLE": "Crafter Station - We build high-quality software",
+      "DESCRIPTION": "From websites to business solutions, <strong>we boost your growth</strong>.",
+      "VIEW_RECENT_WORK": "View recent work",
+      "RECENT_WORK": "Recent work"
     }
   }
 }

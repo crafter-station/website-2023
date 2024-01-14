@@ -25,21 +25,21 @@ const items = Array.from({ length: 10 }, (_, i) => ({
   >
     <StarFilledIcon />
     <span class="pt-0.5">
-      {i18n.hero.design}
+      {i18n.HERO.DESIGN}
        +
-      {i18n.hero.engineering}
+      {i18n.HERO.ENGINEERING}
     </span>
     <StarFilledIcon />
   </p>
   <section class="text-center flex flex-col gap-4">
     <h1
-      class="font-bold text-6xl mb-4 leading-tight"
-      set:html={i18n.hero.welcomeTitle}
+      class="font-semibold text-7xl mb-4 leading-tight"
+      set:html={i18n.HERO.WELCOME_TITLE}
     />
     <p class="text-xl text-white/60">
-      {i18n.hero.subtitle}
+      {i18n.HERO.SUBTITLE}
     </p>
-    <p class="text-xl text-white/60" set:html={i18n.hero.description} />
+    <p class="text-xl text-white/60" set:html={i18n.HERO.DESCRIPTION} />
     <div class="flex space-x-4 justify-center py-4">
       <button
         class={cn(
@@ -55,19 +55,21 @@ const items = Array.from({ length: 10 }, (_, i) => ({
           "border border-stone-600 rounded-md py-3 px-6",
         )}
       >
-        {i18n.hero.callToActionPrimary}
+        {i18n.HERO.CALL_TO_ACTION_PRIMARY}
       </button>
       <button
         class="font-semibold border border-white py-3 px-6 rounded-md hover:bg-white/10 transition-colors duration-200 ease-in-out"
       >
-        {i18n.hero.callToActionSecondary}
+        {i18n.HERO.CALL_TO_ACTION_SECONDARY}
       </button>
     </div>
   </section>
   <section class="flex flex-col items-center gap-8">
     <span class="text-white/60 flex gap-2 justify-center">
       <CubeIcon />
-      <span class="text-lg font-semibold uppercase"> Trabajos Recientes</span>
+      <span class="text-lg font-semibold uppercase"
+        >{i18n.HERO.RECENT_WORK}</span
+      >
     </span>
     <Marquee client:load className="" speed="slow">
       {
@@ -87,7 +89,7 @@ const items = Array.from({ length: 10 }, (_, i) => ({
     <button
       class="font-semibold border w-fit border-white py-3 px-6 rounded-md hover:bg-white/10 transition-colors duration-200 ease-in-out"
     >
-      {i18n.hero.viewRecentWork}
+      {i18n.HERO.VIEW_RECENT_WORK}
     </button>
   </section>
 </main>
