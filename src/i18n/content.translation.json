@@ -16,6 +16,22 @@
       "DESCRIPTION": "De sitios web a soluciones empresariales, <strong class='text-white font-semibold'>impulsamos tu crecimiento</strong>.",
       "VIEW_RECENT_WORK": "Ver trabajos recientes",
       "RECENT_WORK": "Trabajos recientes"
+    },
+    "FOOTER": {
+      "DESCRIPTION": "Agencia de desarrollo de software y <br/> organización open-source, ubicados en Perú",
+      "EXPLORE": "Explora",
+      "HOME": "Inicio",
+      "PUBLICATIONS": "Publicaciones",
+      "ABOUT_WORK": "¿Cómo trabajamos?",
+      "ABOUT_US": "¿Quiénes somos?",
+      "PRICE": "Precios",
+      "RECENT_WORK": "Trabajos Recientes",
+      "RESOURCES": "Recursos",
+      "FAQ": "Preguntas Frecuentes",
+      "MANTRA": "Nuestro Mantra",
+      "TOOLS": "Herramientas",
+      "STUDY_CASES": "Casos de Estudio",
+      "TESTIMONIALS": "Testimonios"
     }
   },
   "en": {
@@ -35,6 +51,22 @@
       "DESCRIPTION": "From websites to business solutions, <strong class='text-white font-semibold'>we boost your growth</strong>.",
       "VIEW_RECENT_WORK": "View recent work",
       "RECENT_WORK": "Recent work"
+    },
+    "FOOTER": {
+      "DESCRIPTION": "Software development agency and<br/> open-source organization, located in Peru",
+      "EXPLORE": "Explore",
+      "HOME": "Home",
+      "PUBLICATIONS": "Publications",
+      "ABOUT_WORK": "How we work?",
+      "ABOUT_US": "Who we are?",
+      "PRICE": "Prices",
+      "RECENT_WORK": "Recent Work",
+      "RESOURCES": "Resources",
+      "FAQ": "FAQ",
+      "MANTRA": "Our Mantra",
+      "TOOLS": "Tools",
+      "STUDY_CASES": "Study Cases",
+      "TESTIMONIALS": "Testimonials"
     }
   }
 }
