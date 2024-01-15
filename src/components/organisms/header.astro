@@ -1,0 +1,58 @@
+---
+import { getI18N } from "@/i18n/utils"
+import CrafterStationIcon from "@/components/icons/crafter-station-icon.astro"
+import BrandGithub from "../icons/brand-github.astro"
+import BrandLinkedin from "../icons/brand-linkedin.astro"
+import BrandX from "../icons/brand-x.astro"
+import { LanguageSwitcher } from "@/components/molecules/language-switcher"
+
+const { currentLocale } = Astro
+
+const i18n = getI18N(currentLocale)
+---
+
+<header class="flex flex-col items-center justify-center w-full h-40">
+  <nav class="flex w-full justify-between px-48">
+    <ul class="flex gap-10 w-[36ch] text-lg">
+      <li><a href="/about">{i18n.HEADER.ABOUT}</a></li>
+      <li><a href="/contact">{i18n.HEADER.SERVICES}</a></li>
+      <li><a href="/contact">{i18n.HEADER.FAQ}</a></li>
+    </ul>
+    <a href="/" class="inline-flex gap-2 items-center font-bold text-3xl">
+      <CrafterStationIcon />
+       Crafter Station
+    </a>
+    <ul class="flex gap-10 items-center ml-24">
+      <li>
+        <a
+          href="https://www.twitter.com/raillyhugo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <BrandX />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.github.com/railly"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <BrandGithub />
+        </a>
+      </li>
+      <li class="pr-8 border-r border-white/60">
+        <a
+          href="https://www.linkedin.com/in/railly-hugo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <BrandLinkedin />
+        </a>
+      </li>
+      <li>
+        <LanguageSwitcher currentLocale={currentLocale} />
+      </li>
+    </ul>
+  </nav>
+</header>

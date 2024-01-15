@@ -17,7 +17,6 @@ export const Marquee = ({
   const containerRef = useRef<HTMLDivElement>(null)
   const scrollerRef = useRef<HTMLUListElement>(null)
   const [start, setStart] = useState(false)
-  console.log({ start })
 
   useEffect(() => {
     addAnimation()
