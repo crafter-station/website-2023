@@ -1,12 +1,24 @@
 {
   "es": {
     "homepage": {
-      "welcome": "Bienvenido a Crafter Station"
+      "welcomeTitle": "Construimos software de <span class='animated-yellow-gradient'>alta calidad</span><br/> que impulsa tu negocio",
+      "subtitle": "Sin complicaciones. Sin reclutamiento. Solo resultados.",
+      "callToActionPrimary": "Agenda una llamada",
+      "callToActionSecondary": "Envíanos un Whatsapp",
+      "title": "Crafter Station - Construimos software de alta calidad",
+      "description": "De sitios web a soluciones empresariales, <strong class='text-white'>impulsamos tu crecimiento</strong>.",
+      "viewRecentWork": "Ver trabajos recientes"
     }
   },
   "en": {
     "homepage": {
-      "welcome": "Welcome to Crafter Station"
+      "welcomeTitle": "We build <span class='animated-yellow-gradient'>high-quality</span></br> software that drives your business",
+      "subtitle": "No hassle. No recruitment. Just results.",
+      "callToActionPrimary": "Schedule a call",
+      "callToActionSecondary": "Send us a Whatsapp",
+      "title": "Crafter Station - We build high-quality software",
+      "description": "From websites to business solutions, <strong>we boost your growth</strong>.",
+      "viewRecentWork": "View recent work"
     }
   }
 }

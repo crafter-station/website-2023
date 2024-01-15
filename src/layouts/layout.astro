@@ -11,10 +11,15 @@ const { metadata } = Astro.props
 
 <html lang={Astro.currentLocale}>
   <Head metadata={metadata} />
-  <body class="min-h-screen">
-    <div class="flex space-between h-auto">
-      <slot />
-    </div>
-    <style is:global></style>
+  <body class="min-h-screen font-sans antialiased !bg-black">
+    <slot />
+    <style is:global>
+      .animated-yellow-gradient {
+        @apply text-transparent bg-clip-text bg-gradient-to-r;
+        @apply from-yellow-400 to-rose-600;
+        background-size: 200% 100%;
+        animation: continuous-gradient 4s ease infinite;
+      }
+    </style>
   </body>
 </html>
