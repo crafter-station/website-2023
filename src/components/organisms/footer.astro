@@ -1,0 +1,85 @@
+---
+import { getI18N } from "@/i18n/utils"
+import CrafterStationIcon from "../icons/crafter-station-icon.astro"
+import PeruFlagIcon from "../icons/peru-flag-icon.astro"
+import BrandX from "../icons/brand-x.astro"
+import BrandGithub from "../icons/brand-github.astro"
+import BrandLinkedinfrom from "../icons/brand-linkedin.astro"
+import BrandInstagram from "../icons/brand-instagram.astro"
+
+const { currentLocale } = Astro
+const i18n = getI18N(currentLocale)
+---
+
+<footer class="flex mt-10 flex-col p-10 gap-20">
+  <div class="flex flex-row border-t border-slate-600/60 pt-10">
+    <div class="flex flex-col gap-4 w-1/2">
+      <div class="inline-flex gap-2 items-center font-bold text-3xl">
+        <CrafterStationIcon />
+         Crafter Station
+      </div>
+      <div class="flex">
+        <p
+          class="text-white/60 text-sm flex"
+          set:html={i18n.FOOTER.DESCRIPTION}
+        />
+        <span class="flex flex-col justify-end pb-1 pl-1">
+          <PeruFlagIcon />
+        </span>
+      </div>
+    </div>
+    <div class="flex w-1/2 gap-[25%]">
+      <ul class="flex flex-col gap-6 font-light">
+        <li class="font-bold">{i18n.FOOTER.EXPLORE}</li>
+        <li>
+          <a href="/">{i18n.FOOTER.HOME}</a>
+        </li>
+        <li>
+          <a href="/">{i18n.FOOTER.PUBLICATIONS}</a>
+        </li>
+        <li>
+          <a href="/">{i18n.FOOTER.ABOUT_WORK}</a>
+        </li>
+        <li>
+          <a href="/">{i18n.FOOTER.ABOUT_US}</a>
+        </li>
+        <li>
+          <a href="/">{i18n.FOOTER.PRICE}</a>
+        </li>
+        <li>
+          <a href="/">{i18n.FOOTER.RECENT_WORK}</a>
+        </li>
+      </ul>
+      <ul class="flex flex-col gap-6 font-light">
+        <li class="font-bold">{i18n.FOOTER.RESOURCES}</li>
+        <li>
+          <a href="/">{i18n.FOOTER.FAQ}</a>
+        </li>
+        <li>
+          <a href="/">{i18n.FOOTER.MANTRA}</a>
+        </li>
+        <li>
+          <a href="/">{i18n.FOOTER.TOOLS}</a>
+        </li>
+        <li>
+          <a href="/" class="text-white/60">{i18n.FOOTER.STUDY_CASES}</a>
+        </li>
+        <li>
+          <a href="/" class="text-white/60">{i18n.FOOTER.TESTIMONIALS}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="flex relative border-t border-slate-600/60 pt-6">
+    <span class="text-white/60 text-sm">© 2024 Crafter Station</span>
+    <div
+      class="absolute flex flex-row gap-10 left-1/2 transform -translate-x-1/2"
+    >
+      <BrandX />
+      <BrandGithub />
+      <BrandLinkedinfrom />
+      <BrandInstagram />
+    </div>
+  </div>
+</footer>
