@@ -3,8 +3,8 @@ import { Image } from "astro:assets"
 import { Marquee } from "@/components/molecules/marquee"
 import { getI18N } from "@/i18n/utils"
 import { cn } from "@/lib/utils"
-import Cube from "@/components/icons/cube.astro"
-import StarFilledIcon from "@/components/icons/star-filled-icon.astro"
+import Cube from "@/components/atoms/icons/cube.astro"
+import StarFilledIcon from "@/components/atoms/icons/star-filled-icon.astro"
 
 const { currentLocale } = Astro
 const i18n = getI18N(currentLocale)
@@ -17,8 +17,8 @@ const items = Array.from({ length: 10 }, (_, i) => ({
 }))
 ---
 
-<main
-  class="animate-fade-up flex flex-col items-center gap-16 min-h-screen px-4 bg-[#131313] text-white"
+<section
+  class="animate-fade-up flex flex-col items-center gap-16 min-h-screen px-4"
 >
   <section class="text-center flex flex-col items-center gap-4">
     <p
@@ -92,4 +92,4 @@ const items = Array.from({ length: 10 }, (_, i) => ({
       {i18n.HERO.VIEW_RECENT_WORK}
     </button>
   </section>
-</main>
+</section>

@@ -1,0 +1,33 @@
+---
+import AccordionSummary from "../atoms/accordion/accordion-summary.astro"
+import Accordion from "../atoms/accordion/accordion.astro"
+
+import ArrowDown from "../atoms/icons/chevron-down.astro"
+
+interface FaqData {
+  title: string
+  description: string
+}
+
+interface Props {
+  class?: string
+  data: FaqData[]
+}
+const { class: className, data } = Astro.props
+---
+
+<section class:list={["bg-black p-4", className]}>
+  {
+    data.map(({ title, description }) => {
+      return (
+        <Accordion>
+          <AccordionSummary>
+            <span class="w-11/12 break-words">{title}</span>
+            <ArrowDown />
+          </AccordionSummary>
+          <p class="mt-3 text-gray-300 w-11/12 break-words">{description}</p>
+        </Accordion>
+      )
+    })
+  }
+</section>

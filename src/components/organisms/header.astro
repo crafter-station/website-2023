@@ -1,9 +1,9 @@
 ---
 import { getI18N } from "@/i18n/utils"
-import CrafterStationIcon from "@/components/icons/crafter-station-icon.astro"
-import BrandGithub from "../icons/brand-github.astro"
-import BrandLinkedin from "../icons/brand-linkedin.astro"
-import BrandX from "../icons/brand-x.astro"
+import CrafterStationIcon from "@/components/atoms/icons/crafter-station-icon.astro"
+import BrandGithub from "../atoms/icons/brand-github.astro"
+import BrandLinkedin from "../atoms/icons/brand-linkedin.astro"
+import BrandX from "../atoms/icons/brand-x.astro"
 import { LanguageSwitcher } from "@/components/molecules/language-switcher"
 
 const { currentLocale } = Astro
@@ -16,7 +16,7 @@ const i18n = getI18N(currentLocale)
     <ul class="flex gap-10 w-[36ch] text-lg">
       <li><a href="/about">{i18n.HEADER.ABOUT}</a></li>
       <li><a href="/contact">{i18n.HEADER.SERVICES}</a></li>
-      <li><a href="/contact">{i18n.HEADER.FAQ}</a></li>
+      <li><a href="#faq">{i18n.HEADER.FAQ}</a></li>
     </ul>
     <a href="/" class="inline-flex gap-2 items-center font-bold text-3xl">
       <CrafterStationIcon />

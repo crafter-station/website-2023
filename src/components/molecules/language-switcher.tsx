@@ -1,6 +1,6 @@
 import { getValidLocale } from "@/i18n/utils"
-import SpainFlagIcon from "../icons/spain-flag-icon"
-import USAFlagIcon from "../icons/usa-flag-icon"
+import SpainFlagIcon from "../atoms/icons/spain-flag-icon"
+import USAFlagIcon from "../atoms/icons/usa-flag-icon"
 import { cn } from "@/lib/utils"
 
 export const LanguageSwitcher = ({

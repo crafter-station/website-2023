@@ -17,6 +17,53 @@
       "VIEW_RECENT_WORK": "Ver trabajos recientes",
       "RECENT_WORK": "Trabajos recientes"
     },
+    "FAQ": {
+      "BADGE": "Preguntas Frecuentes",
+      "TITLE": "Preguntas? Respuestas.",
+      "TABS": {
+        "FIRST": {
+          "TITLE": "Pagos y Facturación",
+          "QUESTIONS": {
+            "FIRST": "¿Cuáles son los métodos de pago?",
+            "SECOND": "¿Cómo se estructuran los pagos para un proyecto personalizado?",
+            "THIRD": "¿Ofrecen financiamiento o planes de pago flexibles?"
+          },
+          "ANSWERS": {
+            "FIRST": "Aceptamos pagos con tarjeta de crédito y débito, transferencia bancaria y PayPal.",
+            "SECOND": "Para proyectos personalizados, requerimos un depósito del 50% para comenzar y el saldo restante se debe antes de la entrega.",
+            "THIRD": "En este momento, no ofrecemos financiamiento ni planes de pago flexibles."
+          }
+        },
+        "SECOND": {
+          "TITLE": "Entrega del producto",
+          "QUESTIONS": {
+            "FIRST": "¿Cuánto tiempo lleva desarrollar una aplicación a medida?",
+            "SECOND": "¿Cómo se comunica el progreso del proyecto durante el desarrollo?",
+            "THIRD": "¿Puedo realizar cambios en el alcance del proyecto una vez que haya comenzado el desarrollo?"
+          },
+          "ANSWERS": {
+            "FIRST": "El tiempo de desarrollo depende de la complejidad del proyecto. Para proyectos personalizados, el tiempo de desarrollo puede variar de 2 a 6 meses. Para proyectos de sitios web estáticos, el tiempo de desarrollo puede variar de 1 a 3 meses.",
+            "SECOND": "El progreso del proyecto se comunica a través de reuniones semanales y actualizaciones diarias.",
+            "THIRD": "Sí, puede realizar cambios en el alcance del proyecto una vez que haya comenzado el desarrollo. Sin embargo, los cambios en el alcance del proyecto pueden afectar el tiempo de desarrollo y el costo del proyecto."
+          }
+        },
+        "THIRD": {
+          "TITLE": "Devolución de pagos",
+          "QUESTIONS": {
+            "FIRST": "¿Cuál es la política de reembolso si no estoy satisfecho con el producto final?",
+            "SECOND": "¿Qué sucede si descubro problemas o errores después de que se ha completado el proyecto?",
+            "THIRD": "¿Proporcionan soporte técnico después de la entrega del producto?"
+          },
+          "ANSWERS": {
+            "FIRST": "Nuestra prioridad es la satisfacción del cliente. Si no está satisfecho con el producto final, agendaremos una reunión para discutir los problemas y, si no se pueden resolver, le reembolsaremos el 80% de su dinero (el 20% restante se destina a cubrir los costos de desarrollo). Sin embargo, no ofrecemos reembolsos por depósitos o pagos parciales.",
+            "SECOND": "Nuestro equipo de soporte está disponible para ayudarlo con cualquier problema o error que pueda encontrar después de que se haya completado el proyecto.",
+            "THIRD": "Sí, proporcionamos soporte técnico después de la entrega del producto. Nuestro equipo de soporte está disponible para ayudarlo con cualquier problema o error que pueda encontrar después de que se haya completado el proyecto."
+          }
+        }
+      },
+      "SCHEDULE": "Aún tienes más preguntas? Agenda una llamada de 15min.",
+      "CALL_TO_ACTION": "Agenda una llamada"
+    },
     "FOOTER": {
       "DESCRIPTION": "Agencia de desarrollo de software y <br/> organización open-source, ubicados en Perú",
       "EXPLORE": "Explora",
@@ -51,6 +98,53 @@
       "DESCRIPTION": "From websites to business solutions, <strong class='text-white font-semibold'>we boost your growth</strong>.",
       "VIEW_RECENT_WORK": "View recent work",
       "RECENT_WORK": "Recent work"
+    },
+    "FAQ": {
+      "BADGE": "FAQ",
+      "TITLE": "Questions? Answers.",
+      "TABS": {
+        "FIRST": {
+          "TITLE": "Payments and Billing",
+          "QUESTIONS": {
+            "FIRST": "What are the payment methods?",
+            "SECOND": "How are payments structured for a custom project?",
+            "THIRD": "Do you offer financing or flexible payment plans?"
+          },
+          "ANSWERS": {
+            "FIRST": "We accept credit and debit card payments, bank transfers and PayPal.",
+            "SECOND": "For custom projects, we require a 50% deposit to start and the remaining balance is due before delivery.",
+            "THIRD": "At this time, we do not offer financing or flexible payment plans."
+          }
+        },
+        "SECOND": {
+          "TITLE": "Product delivery",
+          "QUESTIONS": {
+            "FIRST": "How long does it take to develop a custom application?",
+            "SECOND": "How is project progress communicated during development?",
+            "THIRD": "Can I make changes to the project scope once development has started?"
+          },
+          "ANSWERS": {
+            "FIRST": "Development time depends on the complexity of the project. For custom projects, development time can range from 2 to 6 months. For static website projects, development time can range from 1 to 3 months.",
+            "SECOND": "Project progress is communicated through weekly meetings and daily updates.",
+            "THIRD": "Yes, you can make changes to the project scope once development has started. However, changes to the project scope can affect development time and project cost."
+          }
+        },
+        "THIRD": {
+          "TITLE": "Refunds",
+          "QUESTIONS": {
+            "FIRST": "What is the refund policy if I am not satisfied with the final product?",
+            "SECOND": "What happens if I discover issues or bugs after the project has been completed?",
+            "THIRD": "Do you provide technical support after product delivery?"
+          },
+          "ANSWERS": {
+            "FIRST": "Our priority is customer satisfaction. If you are not satisfied with the final product, we will schedule a meeting to discuss the issues and, if they cannot be resolved, we will refund 80% of your money (the remaining 20% is used to cover development costs). However, we do not offer refunds for deposits or partial payments.",
+            "SECOND": "Our support team is available to assist you with any issues or bugs you may encounter after the project has been completed.",
+            "THIRD": "Yes, we provide technical support after product delivery. Our support team is available to assist you with any issues or bugs you may encounter after the project has been completed."
+          }
+        }
+      },
+      "SCHEDULE": "Still have more questions? Schedule a 15min call.",
+      "CALL_TO_ACTION": "Schedule a call"
     },
     "FOOTER": {
       "DESCRIPTION": "Software development agency and<br/> open-source organization, located in Peru",
