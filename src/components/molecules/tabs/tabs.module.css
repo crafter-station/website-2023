@@ -66,5 +66,15 @@
 
 /*This is for the accordion */
 .panel {
-  min-width: 800px;
+  @media (min-width: 768px) {
+    width: 750px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
+
+  @media (min-width: 1340px) {
+    width: 850px;
+  }
 }
