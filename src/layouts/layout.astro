@@ -15,7 +15,11 @@ const { metadata } = Astro.props
   <Head metadata={metadata} />
   <body class="min-h-screen font-sans antialiased bg-[#131313] text-white">
     <Header />
-    <slot />
+    <main
+      class="flex flex-col items-center gap-8 lg:gap-16 2xl:max-w-[1440px] mx-auto"
+    >
+      <slot />
+    </main>
     <Footer />
     <style is:global>
       .animated-yellow-gradient {

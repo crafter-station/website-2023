@@ -1,0 +1,17 @@
+---
+interface Props {
+  class?: string
+}
+
+const { class: className } = Astro.props
+---
+
+<details
+  class:list={[
+    "py-4 px-2 text-white w-full [&_svg]:open:-rotate-180",
+    className,
+  ]}
+>
+  <slot />
+</details>
+<hr class="m-2 border-t-2 border-stone-600 last-of-type:hidden" />
