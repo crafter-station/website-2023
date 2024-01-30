@@ -32,7 +32,9 @@ const i18n = getI18N(currentLocale)
       class="font-semibold text-3xl md:text-4xl leading-tight lg:text-6xl"
       set:html={i18n.TOOLS.TITLE}
     />
-    <section class="flex flex-wrap w-full gap-20 lg:gap-24 justify-center">
+    <section
+      class="flex flex-wrap w-full gap-x-20 gap-y-10 lg:gap-x-24 lg:gap-y-12 justify-center"
+    >
       <BrandWordpress />
       <BrandWoocommerce />
       <BrandNextJs />
