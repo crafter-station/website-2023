@@ -1,0 +1,47 @@
+---
+import { getI18N } from "@/i18n/utils"
+
+import BrandDiscord from "../atoms/icons/brand-discord.astro"
+import BrandFigma from "../atoms/icons/brand-figma.astro"
+import BrandLinear from "../atoms/icons/brand-linear.astro"
+import BrandNextJs from "../atoms/icons/brand-next-js.astro"
+import BrandSupabase from "../atoms/icons/brand-supabase.astro"
+import BrandTailwind from "../atoms/icons/brand-tailwind.astro"
+import BrandVercel from "../atoms/icons/brand-vercel.astro"
+import BrandWoocommerce from "../atoms/icons/brand-woocommerce.astro"
+import BrandWordpress from "../atoms/icons/brand-wordpress.astro"
+import ToolsIcon from "../atoms/icons/tools-icon.astro"
+
+const { currentLocale } = Astro
+const i18n = getI18N(currentLocale)
+---
+
+<section
+  class="animate-fade-up flex flex-col items-center gap-8 lg:gap-16 px-4 pt-4"
+>
+  <section class="text-center flex flex-col items-center gap-8 lg:gap-20">
+    <p
+      class="flex items-center w-fit gap-2 uppercase bg-stone-900 rounded-md px-4 py-1 text-sm font-semibold border border-stone-700 text-white/60"
+    >
+      <ToolsIcon />
+      <span class="pt-0.5">
+        {i18n.TOOLS.BADGE}
+      </span>
+    </p>
+    <h1
+      class="font-semibold text-3xl md:text-4xl leading-tight lg:text-6xl"
+      set:html={i18n.TOOLS.TITLE}
+    />
+    <section class="flex flex-wrap w-full gap-20 lg:gap-24 justify-center">
+      <BrandWordpress />
+      <BrandWoocommerce />
+      <BrandNextJs />
+      <BrandFigma />
+      <BrandTailwind />
+      <BrandSupabase />
+      <BrandVercel />
+      <BrandDiscord />
+      <BrandLinear />
+    </section>
+  </section>
+</section>
