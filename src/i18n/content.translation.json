@@ -17,6 +17,10 @@
       "VIEW_RECENT_WORK": "Ver trabajos recientes",
       "RECENT_WORK": "Trabajos recientes"
     },
+    "TOOLS": {
+      "BADGE": "Nuestras Herramientas",
+      "TITLE": "Combinamos lo mejor de dos mundos: </br><span class='animated-yellow-gradient'>modernidad</span> y <span class='animated-yellow-gradient'>solidez</span>"
+    },
     "FAQ": {
       "BADGE": "Preguntas Frecuentes",
       "TITLE": "Preguntas? Respuestas.",
@@ -98,6 +102,10 @@
       "DESCRIPTION": "From websites to business solutions, <strong class='text-white font-semibold'>we boost your growth</strong>.",
       "VIEW_RECENT_WORK": "View recent work",
       "RECENT_WORK": "Recent work"
+    },
+    "TOOLS": {
+      "BADGE": "Our Tools",
+      "TITLE": "We combine the best of two worlds: </br><span class='animated-yellow-gradient'>modernity</span> and <span class='animated-yellow-gradient'>solidity</span>"
     },
     "FAQ": {
       "BADGE": "FAQ",

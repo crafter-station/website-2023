@@ -3,11 +3,13 @@ import Layout from "@/layouts/layout.astro"
 import HeroSection from "@/components/organisms/hero-section.astro"
 import { getMetadata } from "@/i18n/utils"
 import FaqSection from "../organisms/faq-section.astro"
+import ToolsSection from "../organisms/tools-section.astro"
 
 const metadata = getMetadata(Astro.currentLocale)
 ---
 
 <Layout metadata={metadata.homepage}>
   <HeroSection />
+  <ToolsSection />
   <FaqSection />
 </Layout>
